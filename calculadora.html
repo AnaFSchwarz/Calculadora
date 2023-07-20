@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title> Calculadora </title>
+		<script src="calculadora.js"></script>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        
+        <table style="background-color:#008080">
+            <tr>
+                <th colspan="4" id="resposta"></th>                
+            </tr>
+            <form>          
+            <tr>
+                <th><button type="reset" >C</button></th>
+                <th><button type="button" onclick="" >()</button></th>
+                <th><button type="button" onclick="" >%</button></th>
+                <th><button type="button" >/</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="addNumber(1)" >1</button></th>
+                <th><button type="button" onclick="addNumber(2)" >2</button></th>
+                <th><button type="button" onclick="addNumber(3)" >3</button></th>
+                <th><button type="button" >X</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="addNumber(4)" >4</button></th>
+                <th><button type="button" onclick="addNumber(5)" >5</button></th>
+                <th><button type="button" onclick="addNumber(6)" >6</button></th>
+                <th><button type="button" >-</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="addNumber(7)" >7</button></th>
+                <th><button type="button" onclick="addNumber(8)" >8</button></th>
+                <th><button type="button" onclick="addNumber(9)" >9</button></th>
+                <th><button type="button" onclick="addOperation()">+</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" >(-</button></th>
+                <th><button type="button" onclick="addNumber(0)" >0</button></th>
+                <th><button type="button" onclick="" >,</button></th>
+                <th><button type="button" >=</button></th>
+            </tr>
+            </form>         
+        </table>
+        <p id="teste"></p>
+    </body>
+</html>
